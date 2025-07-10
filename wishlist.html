@@ -1,0 +1,82 @@
+<!-- 📄 wishlist.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Wishlist</title>
+  <link rel="stylesheet" href="amazonstylesheet.css">
+  <style>
+    .wishlist-container {
+      padding: 20px;
+    }
+    .wishlist-item {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      background-color: white;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .wishlist-image {
+      width: 80px;
+      height: 80px;
+      background-size: cover;
+      border-radius: 5px;
+    }
+    .wishlist-info p {
+      margin: 5px 0;
+    }
+    .remove-btn {
+      margin-left: auto;
+      background-color: crimson;
+      color: white;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body style="background-color: #f0f0f0;">
+  <h1 style="text-align: center;">❤️ My Wishlist</h1>
+  <div class="wishlist-container" id="wishlistContainer">
+    <!-- Wishlist items will appear here -->
+  </div>
+
+  <script>
+    const wishlist = JSON.parse(localStorage.getItem("wishlistItems")) || [];
+    const wishlistContainer = document.getElementById("wishlistContainer");
+
+    if (wishlist.length === 0) {
+      wishlistContainer.innerHTML = "<p style='text-align:center;'>No items in wishlist.</p>";
+    } else {
+      wishlist.forEach((item, index) => {
+        const div = document.createElement("div");
+        div.className = "wishlist-item";
+
+        div.innerHTML = `
+          <div class="wishlist-image" style="background-image: url('https://via.placeholder.com/80');"></div>
+          <div class="wishlist-info">
+            <p><strong>${item}</strong></p>
+            <p>Price: ₹199 (demo)</p>
+          </div>
+          <button class="remove-btn" data-index="${index}">Remove</button>
+        `;
+        wishlistContainer.appendChild(div);
+      });
+    }
+
+    // ❌ Remove item from wishlist
+    wishlistContainer.addEventListener("click", (e) => {
+      if (e.target.classList.contains("remove-btn")) {
+        const index = e.target.getAttribute("data-index");
+        wishlist.splice(index, 1);
+        localStorage.setItem("wishlistItems", JSON.stringify(wishlist));
+        location.reload();
+      }
+    });
+  </script>
+</body>
+</html>

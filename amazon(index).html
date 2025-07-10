@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazone.in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="amazonstylesheet.css">
+   </head>
+   <!-- Paste this just before </body> tag -->
+<div id="toast-container"></div>
+
+<body style="background-color: #cccccc;">
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+            <div class="logo border"></div>
+        </div>
+        <div class="nav-address border">
+            <p class="juber">Deliver to</p>
+            <div class="add-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="bepari">India</p>
+            </div>
+        </div>
+
+        <div class="nav-search">
+            <select id="search-select1">
+                <option>All</option>
+            </select>
+            <input placeholder="Search amazone.in" id="search-input1">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    <div class="signing border">
+        <p><span>Hello,sign in</span></p>
+        <p class="signup">Account &amp; Lists</p>
+    </div>
+    <div class="return border">
+        <p><span>Returns</span></p>
+        <p class="signup">&amp;orders</p>
+    </div>
+    <div class="nav-cart border">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Cart (<span id="cart-count">0</span>)
+        <div id="cart-preview" class="cart-preview" style="display: none"></div>
+  <ul id="cart-items"></ul>
+    </div>
+    </div>
+
+    <div class="panell">
+        <div class="panell-all border">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+        <div class="panell-ops">
+            <p>Today's Deals</p>
+            <p>Customer Services</p>
+            <p>Registry</p>
+            <p>Gift Cards</p>
+            <p>sell</p>
+        </div>
+        <div class="panell-dels">
+            Shop deals in Electronics
+        </div>
+    </div>
+</header>
+    <div class="md-juber">
+        <div class="jb border">
+            <p>You are on amazon.com.You can also shop on Amazon India for millions of products with a fast local delivary. <a>Click here to go amazon.in</a></p>
+        </div>
+    </div>
+    <div class="juber-shop">
+        <div class="box1 box" data-title="Amazon Renewed"> 
+            <div class="mj">
+                <h2>Up to 75% off | Amazon Renewed</h2>
+            <div class="jb-img" style="background-image: url('images/lp.jpg');"></div>
+            <p>See more</p>
+            </div>
+            </div>
+        <div class="box2 box" data-title="International brands">
+            <div class="mjj">
+                <h2>Up to 50% off | International brands</h2>
+            <div class="mj-img" style="background-image: url('images/d.webp');"></div>
+            <p id="jj">See more</p>
+        </div>
+        </div>
+        <div class="box3 box" data-title="DIMPY GARMENTS">
+            <div class="mjjj">
+                <h2>DIMPY GARMENTS</h2>
+            <div class="jbb-img" style="background-image: url('images/dimpy.webp');"></div>
+            <p id="bb">See more</p>
+        </div>
+        </div>
+        <div class="box4 box" data-title="Wall arts decor">
+            <div class="mm">
+                <h2>Up to 85% off | Wall arts, painting, decor &amp; more |…</h2>
+            <div class="mmm-img" style="background-image: url('images/paint.jpg');"></div>
+            <p id="bk">See more</p>
+        </div>
+        </div>
+        <div class="box5 box" data-title="DIMPY GARMENTS"> 
+            <div class="ab">
+                <h2>Min. 40% off | Deals on cookware &amp; kitchen esse…</h2>
+            <div class="ab-img" style="background-image: url('images/tawa.jpg');"></div>
+            <p id="ab">See more</p>
+            </div>
+            </div>
+        <div class="box6 box" data-title="Toys and Games">
+            <div class="ac">
+                <h2>Best Sellers in Toys &amp; Games..</h2>
+            <div class="ac-img" style="background-image: url('images/toys.jpg');"></div>
+            <p id="jbk">-74% <big>₹163</big></p>
+            <p>M.R.P.: ₹499</p>
+            <p id="ac">See more</p>
+        </div>
+        </div>
+        <div class="box7 box" data-title="Silk Saree Women">
+            <div class="ad">
+                <h2>SIRIL Women's Soft Silk Saree |</h2>
+            <div class="ad-img" style="background-image: url('images/woman.jpg');"></div>
+            <p>-67% <big>₹475</big></p>
+            <p>M.R.P.: ₹1,239</p>
+            <p id="ad">See more</p>
+        </div>
+        </div>
+        <div class="box8 box">
+            <div class="ae">
+                <h2>American Tourister| Up to 55% off</h2>
+            <div class="ae-img" style="background-image: url('images/bag.jpg');"></div>
+            <p id="ae">See more</p>
+        </div>
+        </div>
+<div class="tj">
+  <ul>
+    <h2>See personalized recommendations</h2>
+    <div class="signup-center">
+      <button id="signup-btn">Sign Up</button>
+      <div class="jj">
+        <div class="tt">New customer?</div>
+        <div class="jt"><u>search here</u></div>
+      </div>
+    </div>
+  </ul>
+</div>
+    </div>
+</div>
+<!-- Feedback Section -->
+<div class="feedback-section">
+  <h2>We value your feedback</h2>
+  <form class="feedback-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Write your feedback..." required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+    <footer>
+        <div class="footer-1">
+            Back to Top
+        </div>
+        <div class="footer-2">
+            <ul>
+                <p>Get to Know Us</p>
+                    <a>About Amazon</a>
+                    <a>Careers</a>
+                    <a>Press Releases</a>
+                    <a>Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Connect with Us</p>
+                    <a>Facebook</a>
+                    <a>Twitter</a>
+                    <a>Instagram</a>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                    <a>Sell on Amazon</a>
+                    <a>Amazon Global Selling</a>
+                    <a>Advertise Your Products</a>
+                    <a>Amazon Pay on Merchants</a>
+                    <a>Supply to Amazon</a>
+                    <a>Fulfilment by Amazon</a>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                    <a>Your Account</a>
+                    <a>Returns Centre</a>
+                    <a>100% Purchase Protection</a>
+                    <a>100% Purchase Protection</a>
+                    <a>Amazon App Download</a>
+                    <a>Help</a>
+            </ul>
+        </div>
+        <div class="footer-3">
+            <div class="logog"></div>
+        </div>
+            <div class="footer-4">
+                <div class="pages">
+                    <a>Conditions of Use &amp; Sale</a>
+                    <a>Privacy Notice</a>
+                    <a>Interest-Based Ads</a>
+                    <div class="copyright">
+                        
+© 1996-2025, Amazon.com, Inc. or its affiliates
+                </div>
+            </div>
+        </div>
+    </footer>
+<a href="wishlist.html">❤️ Wishlist</a>
+</body>
+<script src="script.js"></script>
+</html>
