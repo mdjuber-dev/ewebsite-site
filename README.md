@@ -46,17 +46,6 @@ amazon-clone/
 4. Right-click `index.html` → **Open with Live Server**
 5. Visit `http://127.0.0.1:5500/index.html` in your browser
 
----
-
-## 🎯 What's Next?
-
-- Make it fully responsive
-- Add product filtering
-- Connect with a backend (Node.js + MongoDB or Firebase)
-- Enable real login/signup
-
----
-
 ## 🙌 Author
 
 Made with ❤️ by [Md Juber](https://github.com/mdjuber-dev)
